@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="flexbox.css">
+    <script src="flexbox.js" defer></script>
+</head>
+<body>
+    
+    <header class="header">
+
+        <div id="title">
+            <h1>IST 4035 Group A</h1>
+            <p>Class Practice</p>
+        </div>
+
+    </header>
+
+    <nav id="nav">
+        <a href="#">Home</a>
+        <a href="#formArea">Form</a>
+        <a href="#section3">Joke Generator</a>
+        <a href="#tribute-info">About Us</a>
+    </nav>
+
+    <main id="mainArea">
+
+       <div id="imageDiv">
+        <figcaption id="img-caption">
+            Welcome to the School of Computing Sciences
+        </figcaption>
+        <a href="https://www.usiu.ac.ke" id ="tribute-link" target = "_blank">
+        <button id="mainbutton">Visit Website</button>
+        </a>
+       </div>
+
+       <div id="tribute-info">
+        <div id="tribute-info_section1">
+            <p> The programming languages covered inlude:</p>
+            <ul>
+                <li> Python</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>R</li>
+                <li>C/C++</li>
+                <li>Golang</li>
+                <li> C#</li>
+                <li>PHP</li>
+            </ul>
+
+        </div>
+        <div id="tribute-info_section2">
+            <section id="tablesection">
+                <h1>Courses offered</h1>
+                <table>
+                    <caption>We offer the following: </caption>
+                    <thead>
+                        <tr class="tableheader">
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tablebody rowcolor">
+                            <td>Computer Science</td>
+                            <td class="tabledescription">Designing a</td>
+                            <td> Ksh 450,000 </td>
+                        </tr>
+                        <tr class="tablebody rowcolor2" >
+                            <td>Information Technology </td>
+                            <td class="tabledescription">Mainatining a</td>
+                            <td> Ksh 350,000 </td>
+                        </tr>
+                        <tr class="tablebody rowcolor3" >
+                            <td>Data Science </td>
+                            <td class="tabledescription">Mainatining a</td>
+                            <td> Ksh 350,000 </td>
+                        </tr>
+                        <tr class="tablebody rowcolor4" >
+                            <td>Cyber Security </td>
+                            <td class="tabledescription">Practice of defending</td>
+                            <td> Ksh 350,000 </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </section>
+          </div>
+
+          
+
+       </div>
+       <div id="formArea">
+
+        <div class="formContainer">
+
+            <form id="myform" onsubmit="return validateForm()">
+                <h2>Registration Form</h2>
+                <div id="error-message" class="error"></div>
+                
+                <label for="">Name:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="">Email:</label>
+                <input type="email" id="email" name="email">
+                
+                <label for="">Password:</label>
+                <input type="password" id="password" name="password">
+                
+                <input type="submit" value="Submit">
+                <p id="formMessage" style="color: red;"> </p>
+                    </form>
+
+        </div>
+
+          </div>
+
+        <div id="section3">
+            <h1>Joke Generator</h1>
+           <button id="generateButton">Generate Jokes</button>
+          <div id="sliderLabel">  Number of Jokes: <span id="jokeCount">1</span> </div>
+          <input type="range" id="slider" min="1" max="5" value="1">
+          <div id="jokesContainer"></div>
+
+        </div>
+
+
+
+
+
+    </main>
+    <footer>
+        @USIU 2024
+    </footer>
+</body>
+</html>

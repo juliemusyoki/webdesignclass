@@ -1,0 +1,251 @@
+*{
+
+    box-sizing: border-box;
+}
+body, html{
+
+    padding: 0;
+    margin: 0;
+}
+
+/*header*/
+#title{
+    text-align: center;
+    padding: 10px;
+    background-color: aliceblue;
+    color: #990011FF;
+    font-family: Andale Mono, monospace;
+}
+#title p{
+    font-size: 1.5rem;
+    font-family: Andale Mono, monospace;
+}
+
+/*navigation area*/
+#nav{
+    background-color: #990011FF;
+    padding: 10px;
+    font-family: Andale Mono, monospace;
+    font-size: 1.2rem;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#nav > a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+#nav a:hover{
+    color: #990011FF;
+    background-color: aliceblue;
+}
+/*css for background image fot thr empty div*/
+#imageDiv{
+    background-image: url(download2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    height: 600px;
+}
+
+figcaption{
+    font-size: 3em;
+    font-family: Andale Mono, monospace;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: bolder;
+}
+
+
+/*css for responsive screen size*/
+@media screen and (max-width:800px){
+    #nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    #nav > a{
+        width: 100%;
+    }
+    #mainbutton{
+        top: 65%;
+    }
+}
+
+
+/*css for footer*/
+footer{
+    text-align: center;
+    font-family: Andale Mono, monospacele;
+    background-color: #990011FF;
+    color: white;
+    padding: 10px;
+}
+
+#mainbutton{
+    padding: 10px;
+    font-family: Andale Mono, monospacele;
+    font-size: 1.2em;
+    color: white;
+    background-color: #990011FF;
+    border: 0px #990011FF;
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%);
+}
+
+/*css for courses row section*/
+#tribute-info{
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #FCF6F5;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    align-items: center;
+}
+
+/*css for courses row section - column 1 */
+#tribute-info_section1{
+    flex: 50%;
+
+}
+ul{
+    display: inline-block;
+    text-align: left;
+}
+li{
+    padding-bottom: 15px;
+}
+
+
+/*css for courses row section - column 2 */
+#tribute-info_section2{
+    flex: 50%;
+    padding: 1rem;
+}
+#tablesection{
+    border: #0a0a23;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+#tablesection h1{
+    text-align: center;
+    background-color: #55bcc9;
+    margin-top: 0;
+    padding: 1rem o;
+    border-bottom: 1px solid #0a0a23;
+}
+table{
+    border-collapse: collapse;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+tr.tableheader th {
+    text-align: left;
+    padding: 1rem 0 1rem 1rem;
+}
+caption{
+    padding: 0 0 1rem 0;
+    border-bottom: 1px solid #0a0a23;
+    font-weight: bold;
+}
+tr.tablebody td:first-of-type{
+    vertical-align: top;
+}
+
+td{
+    vertical-align: top;
+    padding: 1rem;
+}
+.rowcolor{
+    background-color: #97caef;
+}
+.rowcolor:hover{
+    background-color: #cafafe;
+}
+.rowcolor2:hover{
+    background-color: #3feee6;
+}
+.tabledescription{
+    text-align: justify;
+}
+
+
+/*form area*/
+#formArea{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*form css*/
+.formConatiner{
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    width: 50%;
+}
+.formConatiner label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.formConatiner input, .formConatiner textarea{
+    width: calc(100%-18px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+
+}
+.formConatiner input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+.formConatiner input[type="submit"]:hover{
+    background-color: #45a049;
+}
+
+/*css for jokes*/
+#section3{
+    display: flex;
+    justify-content: center;
+    background-color: lemonchiffon;
+    padding: 3rem 0;
+    width: 100%;
+}
+#jokeContainer{
+    width: 60%;
+    text-align: center;
+}
+
+#jokesContainer{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.joke{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+#generateButton{
+    
+}
